@@ -5,6 +5,8 @@
 ############
 
 rancho.esproj/
+node_modules/
+CHANGELOG.md
 
 ############
 ## IDEs
