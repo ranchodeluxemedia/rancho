@@ -128,10 +128,10 @@ function rancho_scripts_and_styles() {
 		wp_register_script( 'rancho-modernizr', get_stylesheet_directory_uri() . '/assets/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
 		// register main stylesheet
-		wp_register_style( 'rancho-stylesheet', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
+		wp_register_style( 'rancho-stylesheet', get_stylesheet_directory_uri() . '/assets/css/style.min.css', array(), '', 'all' );
 
 		// ie-only style sheet
-		wp_register_style( 'rancho-ie-only', get_stylesheet_directory_uri() . '/assets/css/ie.css', array(), '' );
+		wp_register_style( 'rancho-ie-only', get_stylesheet_directory_uri() . '/assets/css/ie.min.css', array(), '' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
