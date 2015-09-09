@@ -17,6 +17,10 @@ require_once( 'assets/rancho.php' );
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 require_once( 'assets/admin.php' );
 
+// LOAD CUSTOM POST TYPE FILES
+require_once( 'includes/post-types/post-type-show.php' );
+require_once( 'includes/post-types/post-type-album.php' );
+
 /*********************
 LAUNCH rancho
 Let's get everything up and running.

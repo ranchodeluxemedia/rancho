@@ -138,7 +138,7 @@ you like.
 
 // Custom Backend Footer
 function rancho_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Developed by <a href="http://yoursite.com" target="_blank">Your Site Name</a></span>. Built using <a href="http://themble.com/rancho" target="_blank">rancho</a>.', 'ranchotheme' );
+	_e( '<span id="footer-thankyou">Developed by <a href="http://dribbble.com/chriscanterbury" target="_blank"><strong>rancho</strong>(deluxe)</a></span>. Built using <a href="http://themble.com/rancho" target="_blank"><strong>rancho</strong>(base)</a>.', 'ranchotheme' );
 }
 
 // adding it to the admin area
