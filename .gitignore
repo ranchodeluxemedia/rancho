@@ -1,10 +1,10 @@
 # folders and files to be ignored by git
 
 ############
-## Bones
+## rancho
 ############
 
-Bones.esproj/
+rancho.esproj/
 
 ############
 ## IDEs

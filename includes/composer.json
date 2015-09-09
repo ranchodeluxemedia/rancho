@@ -1,0 +1,12 @@
+{
+    "name": "ranchodeluxemedia/rancho",
+    "authors": [
+        {
+            "name": "Chris Canterbury",
+            "email": "chris@ranchodeluxemedia.com"
+        }
+    ],
+    "require": {
+      "jjgrainger/wp-custom-post-type-class": "dev-master"
+    }
+}

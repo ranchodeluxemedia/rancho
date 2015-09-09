@@ -1,10 +1,10 @@
-# BONES CHANGE LOG & HISTORY
+# rancho CHANGE LOG & HISTORY
 
 This theme is meant to make development easier & take
 advantage of modern web development & design techniques.
 For more information, please visit:
 
-http://themble.com/bones/
+http://themble.com/rancho/
 
 Author: Eddie Machado
 
@@ -26,7 +26,7 @@ Author: Eddie Machado
 - added pull paths for the includes in functions.php ( get_template_directory() )
 - renamed clearfix to cf (just cuz i feel like it)
 - removed custom search form since WordPress now supports HTML5 search form
-- moving bones ahoy function to main functions file
+- moving rancho ahoy function to main functions file
 - added content width and replaced css w/ the new markup for oembeds
 - put the nav link functions directly in the templates, no need for extra functions
 - removed navigation fallbacks, because really you never use those anyway
@@ -93,7 +93,7 @@ Author: Eddie Machado
 - merged base.css into style.css for one less call in the header
 - added styleguide page and styles (oh yea!)
 - added nav class to both menus
-- removed "Powered by Wordpress & Bones" from footer, because let's face it: we all delete this anyway.
+- removed "Powered by Wordpress & rancho" from footer, because let's face it: we all delete this anyway.
 - added button class to submit comment button
 - removed html5 placeholder fallback (you should be using Gravity Forms)
 - added slug and rewrite to custom post type for easier urls
@@ -132,7 +132,7 @@ Author: Eddie Machado
 - added pubdate and time microformat to all templates
 - changed page navi from div to nav and from ul to ol
 - added Read More filter to replace the [...]
-- removed default "Bones" text in footer if you don't have a menu
+- removed default "rancho" text in footer if you don't have a menu
 - updated modernizr to 2.0.6 & added FULL support (respond, load, ect)
 - updated jQuery to 1.6.2
 - added IE6 meta to remove toolbar
@@ -144,13 +144,13 @@ Author: Eddie Machado
 - removed DOMAssistant for ancient IE users
 - removed flowplayer folder (lighten the load)
 - remove ie folder for IE scripts that are now gone
-- moved translation function to bones.php
+- moved translation function to rancho.php
 - removed overflow: hidden from some comment styles
 - cleaned up head with more removals
-- moved related posts & page navi plugin to bones.php
+- moved related posts & page navi plugin to rancho.php
 - removing wp version from rss feed
 - removing useless wordpress dashboard widgets
-- organizing bones & functions for simplicity
+- organizing rancho & functions for simplicity
 - removed analytics
 - added auto hyphens to normalize.css (http://blog.fontdeck.com/post/9037028497/hyphens)
 - removed the custom header image support
@@ -195,14 +195,14 @@ Author: Eddie Machado
 - changed name of default stylesheet to default so it's easier to
 	debug. (having two stylesheets named style is confusing)
 - added clearing class to #inner-header and #inner-footer
-- added bones body class depending on what browser
+- added rancho body class depending on what browser
 - changed the_author to the_author_posts_link in single.php and archive.php
 - changed the_author to the_author_posts_link in single-custom_type.php
 - added custom taxonomy template
 - added browser classes to style.css
 - removed lazy load (sorry, it sucked)
 - added twitter and facebook user profiles
-- added post formats to bones.php core
+- added post formats to rancho.php core
 - fixed menu system (thanks to Dom & Mattias)
 - added categories & tag info for custom post types
 - adding standard categories & tags to custom post type example
@@ -221,7 +221,7 @@ Author: Eddie Machado
 - bloginfo('url') in header replaced with echo home_url()
 - using get_template_directory_uri() instead of bloginfo('template_directory')
 - using get_the_author_meta('display_name') instead of deprecated function
-- fixed error in bones.php for menu fallback **thanks Mark**
+- fixed error in rancho.php for menu fallback **thanks Mark**
 - creating thumbnail fallback functions
 - added header.js and moved modernizr & imgsizer in that file
 - added lazy load jquery plugin
@@ -248,9 +248,9 @@ Author: Eddie Machado
 
 **v1.04**
 - moved the custom script call and pngfix to the footer
-	from the bones file so it's easier to see what's being
+	from the rancho file so it's easier to see what's being
 	called.
-- moved apple-touch-icon.png to the library/images folder so
+- moved apple-touch-icon.png to the assets/images folder so
 	file locations are consistent.
 - added a log file to keep track of changes
 - fixed html5 video functionality & fallback (w00t!)
