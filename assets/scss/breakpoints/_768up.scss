@@ -38,7 +38,28 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-
+#navbar {
+	ul {
+		@include list-inline;
+		font: 0/0 $sans-serif;
+		line-height: 60px;
+		li {
+			width: 20%;
+			font-size: 20px;
+			text-align: center;
+			border-left: 1px solid $black;
+			&:last-child {
+				border-right: 1px solid $black;
+			}
+			a {
+				font-weight: 700;
+				text-transform: uppercase;
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}
 .nav {
 	border: 0;
 	ul {
@@ -142,17 +163,18 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
+	// margin-top: 2.2em;
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
+		// border-bottom: 2px solid #444;
+		margin: 0;
 		margin-bottom: 0.75em;
 	}
 
 	.widget {
-		padding: 0 10px;
-		margin: 2.2em 0;
+		// padding: 0 10px;
+		// margin: 2.2em 0;
 
 		ul {
 			li {
@@ -263,6 +285,11 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
+
+.copyright {
+	font-size: em(12);
+	text-align: center;
+}
 
 /*
 you'll probably need to do quite a bit

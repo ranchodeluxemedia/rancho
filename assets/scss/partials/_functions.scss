@@ -16,6 +16,15 @@ http://sass-lang.com/documentation/Sass/Script/Functions.html
 
 ******************************************************************/
 
+// *************************
+//  Pixel to Em Conversion
+//  Usage: body { font-size: em(18); }
+//  ************************
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
 
 /*********************
 COLOR FUNCTIONS

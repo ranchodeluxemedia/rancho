@@ -116,5 +116,14 @@ jQuery(document).ready(function($) {
   // Init QuickShare
   quickShare();
 
+  // $.ajax({
+  //   type: "GET",
+  //   dataType: "json",
+  //   url: 'http://localhost/sandbox/wptest/wp-json/wp/v2/posts/1'
+  // }).then(function(data){
+  //   $('.greeting-id').append(data.title.rendered);
+  //   $('.greeting-content').append(data.content.rendered);
+  // });
+
 
 }); /* end of as page load scripts */

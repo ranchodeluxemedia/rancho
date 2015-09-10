@@ -30,12 +30,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   font-family: $sans-serif;
   text-decoration: none;
   color: $white;
-  font-size: 0.9em;
-  font-size: 34px;
-  line-height: 34px;
-  font-weight: normal;
-  padding: 0 24px;
-  border-radius: 4px;
+  font-size: em(18);
+  line-height: em(30);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 em(20);
+  border-radius: em(4);
   border: 0;
   cursor: pointer;
   @include transition(background-color 0.14s ease-in-out);

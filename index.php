@@ -30,7 +30,7 @@
 
 								<footer class="article-footer cf">
 									<span class="tweet-this">
-										<a href="#" class="qs-link" data-qs-service="twitter">Tweet this page</a>
+										<a href="#" class="qs-link blue-btn" data-qs-service="twitter">Tweet this page</a>
 									</span>
 									<p class="footer-comment-count">
 										<?php comments_number( __( '<span>No</span> Comments', 'ranchotheme' ), __( '<span>One</span> Comment', 'ranchotheme' ), __( '<span>%</span> Comments', 'ranchotheme' ) );?>

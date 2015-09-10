@@ -44,6 +44,25 @@
 
 		<div id="container">
 
+    <div id="topbar">
+      <div id="topbar-inner" class="wrap cf">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. 
+      </div>
+    </div>
+
+    <nav id="navbar">
+      <div class="wrap cf">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
@@ -55,8 +74,8 @@
 					<?php // bloginfo('description'); ?>
 
 
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php wp_nav_menu(array(
+					<!-- <nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement"> -->
+						<?php /* wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
     					         'menu' => __( 'The Main Menu', 'ranchotheme' ), // nav name
@@ -68,9 +87,8 @@
   			               'link_after' => '',                             // after each link
   			               'depth' => 0,                                   // limit the depth of the nav
     					         'fallback_cb' => ''                             // fallback function (if there is one)
-						)); ?>
-
-					</nav>
+						)); */ ?>
+					<!-- </nav> -->
 
 				</div>
 

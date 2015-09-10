@@ -125,7 +125,10 @@ function rancho_scripts_and_styles() {
   if (!is_admin()) {
 
 		// modernizr (without media query polyfill)
-		wp_register_script( 'rancho-modernizr', get_stylesheet_directory_uri() . '/assets/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+    wp_register_script( 'rancho-modernizr', get_stylesheet_directory_uri() . '/assets/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+		
+    // AngularJS (Just for fucking around)
+    wp_register_script( 'rancho-angular', get_stylesheet_directory_uri() . '/assets/js/libs/angular.min.js', array(), '', false );
 
 		// register main stylesheet
 		wp_register_style( 'rancho-stylesheet', get_stylesheet_directory_uri() . '/assets/css/style.min.css', array(), '', 'all' );
@@ -143,7 +146,8 @@ function rancho_scripts_and_styles() {
 		wp_register_script( 'rancho-js-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '', true );
 
 		// enqueue styles and scripts
-		wp_enqueue_script( 'rancho-modernizr' );
+    wp_enqueue_script( 'rancho-modernizr' );
+    wp_enqueue_script( 'rancho-angular' );
 		wp_enqueue_style( 'rancho-stylesheet' );
 		wp_enqueue_style( 'rancho-ie-only' );
 

@@ -20,17 +20,52 @@ http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
 
 ******************************************************************/
 
+// Usage: @include clearfix();
+@mixin clearfix() {
+  & {
+    *zoom: 1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Usage: @include hide-text();
+@mixin hide-text() {
+  position: relative;
+  text-indent: -99999px;
+  display: inline-block;
+}
+
+//  Usage: @include opacity(1.0);
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin list-inline {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    > li{
+        display:inline-block;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}
 
 /*********************
 TRANSITION
 *********************/
-
-/*
-I totally rewrote this to be cleaner and easier to use.
-You'll need to be using Sass 3.2+ for these to work.
-Thanks to @anthonyshort for the inspiration on these.
-USAGE: @include transition(all 0.2s ease-in-out);
-*/
+// USAGE: @include transition(all 0.2s ease-in-out);
 
 @mixin transition($transition...) {
   // defining prefixes so we can use them in mixins below
@@ -70,4 +105,51 @@ probably best not to use it. I mean, were you going to anyway? */
 	box-sizing:         $type;
 }
 
+//*******************
+// Triangles
+//*******************
+// Usage: @include arrow("left", #cccccc, 10);
+
+@mixin arrow($direction, $color, $size) {
+  $pxSize: $size + px;
+  $remSize: ($size / 10) + rem;
+
+  width: 0;
+  height: 0;
+
+  @if $direction == "left"{
+    border-top: $pxSize solid transparent;
+    border-right: $pxSize solid $color;
+    border-bottom: $pxSize solid transparent;
+
+    border-top: $remSize solid transparent;
+    border-right: $remSize solid $color;
+    border-bottom: $remSize solid transparent;
+  }@else if $direction == "right"{
+    border-top: $pxSize solid transparent;
+    border-bottom: $pxSize solid transparent;
+    border-left: $pxSize solid $color;
+
+    border-top: $remSize solid transparent;
+    border-bottom: $remSize solid transparent;
+    border-left: $remSize solid $color;
+  }@else if $direction == "up"{
+    border-left: $pxSize solid transparent;
+    border-right: $pxSize solid transparent;
+    border-bottom: $pxSize solid $color;
+
+    border-left: $remSize solid transparent;
+    border-right: $remSize solid transparent;
+    border-bottom: $remSize solid $color;
+  }@else if $direction == "down"{
+    border-left: $pxSize solid transparent;
+    border-right: $pxSize solid transparent;
+    border-top: $pxSize solid $color;
+
+    border-left: $remSize solid transparent;
+    border-right: $remSize solid transparent;
+    border-top: $remSize solid $color;
+  }
+
+}
 
