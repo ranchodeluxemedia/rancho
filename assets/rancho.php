@@ -139,7 +139,8 @@ function rancho_scripts_and_styles() {
     }
 
 		//adding scripts file in the footer
-		wp_register_script( 'rancho-js', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '', true );
+    wp_register_script( 'rancho-js-plugins', get_stylesheet_directory_uri() . '/assets/js/plugins.js', array( 'jquery' ), '', true );
+		wp_register_script( 'rancho-js-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '', true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'rancho-modernizr' );
@@ -154,7 +155,8 @@ function rancho_scripts_and_styles() {
 		and your site will load faster.
 		*/
 		wp_enqueue_script( 'jquery' );
-		wp_enqueue_script( 'rancho-js' );
+    wp_enqueue_script( 'rancho-js-plugins' );
+		wp_enqueue_script( 'rancho-js-scripts' );
 
 	}
 }

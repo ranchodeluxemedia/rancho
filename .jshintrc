@@ -1,0 +1,10 @@
+{
+  "asi": true,
+  "es3": true,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "globals": {
+    "jQuery": true
+  }
+}
