@@ -21,6 +21,10 @@ require_once( 'assets/admin.php' );
 require_once( 'includes/post-types/post-type-show.php' );
 require_once( 'includes/post-types/post-type-album.php' );
 
+// LOAD CUSTOM FUNCTIONS 
+require_once( 'includes/functions/layout.php' );
+require_once( 'includes/functions/plugins.php' );
+
 /*********************
 LAUNCH rancho
 Let's get everything up and running.

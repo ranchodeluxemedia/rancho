@@ -1,0 +1,20 @@
+{
+  "name": "rancho",
+  "version": "1.0.0",
+  "homepage": "http://ranchodeluxemedia.com/rancho",
+  "authors": [
+    "Chris Canterbury <chris@ranchodeluxemedia.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components",
+    "test",
+    "tests"
+  ]
+}
