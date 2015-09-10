@@ -6,6 +6,7 @@
 
 rancho.esproj/
 node_modules/
+assets/vendor/
 CHANGELOG.md
 
 ############

@@ -1,6 +1,7 @@
 
-// normalize: http://necolas.github.io/normalize.css/
+// Include third-party collections here...
 @import "partials/normalize";
+@import "../vendor/animate.css-scss/animate.scss";
 
 // Sass variables
 @import "partials/variables";

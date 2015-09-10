@@ -13,8 +13,11 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "assets/components",
+    "assets/vendor",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "animate.css-scss": "~3.1.0"
+  }
 }
