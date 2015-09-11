@@ -6,6 +6,8 @@
 
 rancho.esproj/
 node_modules/
+includes/vendor/
+includes/composer.lock
 assets/vendor/
 CHANGELOG.md
 
