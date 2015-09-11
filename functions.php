@@ -8,22 +8,22 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, etc.
 */
 
-// Require Composer files...
-require __DIR__ . '/includes/vendor/autoload.php';
-
 // LOAD rancho CORE (if you remove this, the theme will break)
 require_once( 'assets/rancho.php' );
 
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 require_once( 'assets/admin.php' );
 
-// LOAD CUSTOM POST TYPE FILES
-require_once( 'includes/post-types/post-type-show.php' );
-require_once( 'includes/post-types/post-type-album.php' );
-
 // LOAD CUSTOM FUNCTIONS 
 require_once( 'includes/functions/layout.php' );
 require_once( 'includes/functions/plugins.php' );
+
+// LOAD CPT.php (Custom Post Type Class)
+include_once('includes/CPT.php');
+
+// LOAD CUSTOM POST TYPES
+require_once('includes/post-types/post-type-show.php');
+require_once('includes/post-types/post-type-album.php');
 
 /*********************
 LAUNCH rancho
